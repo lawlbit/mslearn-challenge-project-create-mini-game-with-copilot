@@ -14,6 +14,9 @@ def main():
     computer_score = 0
     while True:
         user_input = input("Enter your choice: ")
+        # ensure user input is in lower case
+        user_input = user_input.lower()
+
         if user_input == "q":
             print("Final score:")
             print(f"User: {user_score}")
